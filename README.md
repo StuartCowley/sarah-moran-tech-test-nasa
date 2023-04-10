@@ -9,6 +9,10 @@ The following functionalities were requested:
 - A search page that allows users to search for images by keyword
 - Images must be returned upon a successful search
 
+## Check it out
+
+Check out this React application on https://nasa-tech-test-command-shift.netlify.app
+
 ## Built With
 
 This application was built using React using a functional component approach.
@@ -17,10 +21,17 @@ This application was built using React using a functional component approach.
 
 ![My Image](/public/screenshot.jpg)
 
-## Testing Utilities
+## Concepts
 
+- React
 - Jest
 - React Testing Library
+- Axios
+- Functional Components
+- Props
+- State
+- Conditional Rendering
+- Multiple Component Mapping
 
 ## Installation
 
@@ -59,8 +70,8 @@ npm start
 
 If I had more time I would:
 
-- Make the app more responsive to different screen sizes
 - Write a test for getImages function
+- Make the app more responsive to different screen sizes
 
 ## Author
 
