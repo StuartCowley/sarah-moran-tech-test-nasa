@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import App from "../components/App";
 
 describe("App", () => {
@@ -7,5 +7,13 @@ describe("App", () => {
     const { asFragment } = render(<App />);
 
     expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("renders the logo", () => {
+    render(<App />);
+
+    const logo = screen.getByAltText(/nasa/i);
+
+    expect(logo).toBeInTheDocument();
   });
 });

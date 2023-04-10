@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import SearchResults from "../components/SearchResults";
 
 describe("SearchResults", () => {
@@ -7,5 +7,13 @@ describe("SearchResults", () => {
     const { asFragment } = render(<SearchResults results={[]} />);
 
     expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("renders results", () => {
+    const results = ["image1", "image2", "image3"];
+
+    render(<SearchResults results={results} />);
+
+    expect(results.length).toBe(3);
   });
 });
