@@ -29,11 +29,6 @@ exports[`App renders correctly 1`] = `
         </button>
       </form>
     </div>
-    <p
-      class="no-results"
-    >
-      No Results
-    </p>
   </div>
 </DocumentFragment>
 `;

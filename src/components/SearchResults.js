@@ -1,7 +1,8 @@
 import React from "react";
 import "../styles/search-results.css";
 
-const SearchResults = ({ results }) => {
+const SearchResults = ({ searched, results }) => {
+  if (!searched) return null;
   if (!results.length) {
     return <p className="no-results">No Results</p>;
   } else {

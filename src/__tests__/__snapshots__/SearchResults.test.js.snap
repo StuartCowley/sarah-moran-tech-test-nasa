@@ -1,11 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SearchResults renders correctly 1`] = `
-<DocumentFragment>
-  <p
-    class="no-results"
-  >
-    No Results
-  </p>
-</DocumentFragment>
-`;
+exports[`SearchResults renders correctly 1`] = `<DocumentFragment />`;
+
+exports[`SearchResults renders results 1`] = `<DocumentFragment />`;
